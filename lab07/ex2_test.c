@@ -107,6 +107,7 @@ int main() {
     // verify result is correct (within some threshold)
     if (fabs(serial_result - result) > 0.001) {
       printf("Manual reduction does not match reference.\n");
+      printf("%fs\n", result);
       return -1;
     }
 
